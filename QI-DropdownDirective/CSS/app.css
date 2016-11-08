@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px 0 0 40px;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 50px 0 15px 0;
+}
+
+.ng-not-empty{
+   background-color: #c4e9f8;
+}
+
+.img-style{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border:2px solid #fff;
+}
+.arrow_box {
+    position: relative;
+    background: #193c8d;
+    border: 1px solid #c2e1f5;
+    color: #fff;
+    padding: 10px;
+    width: 220px;
+    left: 150px;
+    z-index: 9999;
+
+}
+.arrow_box:after, .arrow_box:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(96, 138, 235, 0);
+    border-top-color: #193c8d;
+    border-width: 7px;
+    margin-left: -7px;
+}
+.arrow_box:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: #c2e1f5;
+    border-width: 8px;
+    margin-left: -8px;
+}
+/* Custom input dropdown styles */
+
+.input-dropdown {
+    margin: 0 30px 0 0;
+    width: 410px;
+    /* set the width of the input and dropdown */
+}
+
+.input-dropdown input[type='text'] {
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    background-size: contain;
+}
+.dropdown{
+    background-image: url(../Assets/down-arrow.png);
+    background-position: 360px 2px;
+    background-repeat: no-repeat;
+
+}
+.search {
+    background-image: url(../Assets/search.png) !important;
+    background-position: 360px 2px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    background-size: contain;
+
+}
+
+.input-dropdown ul > li {
+    transition: background .15s;
+}
+
+.input-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+
+.input-dropdown ul {
+    background: #fff;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    height: 166px;
+    overflow: auto;
+}
+
+.input-dropdown ul > li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.input-dropdown ul > li.active {
+    background: #193c8d;
+    color: #fff;
+}

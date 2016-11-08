@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="CSS/app.css" rel="stylesheet">
+</head>
+<title>QI - Dropdown Directive</title>
+
+<body ng-app="dropdownApp">
+    <div class="wrapper">
+        <h1>Custom AngularJS Directive For Dropdown</h1>
+        <div class="content" ng-controller="InputDropdownController as dropdownCtrl">
+            <form name="demoDirective"  novalidate>
+                <h2>Usage #1 </h2>
+                <dropdown default-dropdown-items="dropdownCtrl.defaultDropdownStrings" default-car="dropdownCtrl.carDetails" default-driver="dropdownCtrl.driverDetails" filter-list-method="dropdownCtrl.filterDropdownList(userInput)" input-placeholder="Select Driver To Pair" input-name="usage1" selected-item="dropdownCtrl.usage1"></dropdown>
+
+                <h2>Usage #2 </h2>
+                <dropdown default-dropdown-items="dropdownCtrl.defaultDropdownStrings" default-car="dropdownCtrl.carDetails" default-driver="dropdownCtrl.driverDetails" filter-list-method="dropdownCtrl.filterDropdownList(userInput)" input-placeholder="Select Driver To Pair" input-name="usage2" selected-item="dropdownCtrl.usage2"></dropdown>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="lib/angular.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="directive.js"></script>
+</html>
