@@ -13,10 +13,10 @@ AngularJS Application Test Document . Create a custom directive to include a dro
 This repository contains the angularjs assignment on writing a custom directive to create a dropdown related to car and driver details. The dropdown will have search option and it can show extra details of an object on hover on the dropdown list. This project is written in pure AngularJS, no 3rd party library has been used.
 To use this directive maintain the following structure and include in your web app -
 
-<dropdown default-dropdown-items="defaultDropdownStrings" default-car="carDetails" default-driver="driverDetails" filter-list-method="filterDropdownList(userInput)" input-placeholder="Select Driver To Pair" input-name="Dropdown Demo" selected-item="dummyData"></dropdown>
+&lt;dropdown default-dropdown-items=&quot;defaultDropdownStrings&quot; default-car=&quot;carDetails&quot; default-driver=&quot;driverDetails&quot; filter-list-method=&quot;filterDropdownList(userInput)&quot; input-placeholder=&quot;Select Driver To Pair&quot; input-name=&quot;Dropdown Demo&quot; selected-item=&quot;dummyData&quot;&gt;&lt;/dropdown&gt;
 
-Following are the main points -
-- <dropdown> is the name of our directive. It has following attributes :
+
+&lt;dropdown&gt; is the name of our directive. It has following attributes :
 - default-dropdown-items : It contains the default list of items which we need to show on the dropdown
 - default-car : It contains the default car object that needs to be referred to show the extra details pop up on hover
 - default-driver : As same as default-car attribute this is also used for driver details pop up on hover
@@ -25,5 +25,5 @@ Following are the main points -
 - input-name : It is used for naming the input tag
 - selected-item : Used to store the final selected item (Optional Attribute)
 
-This custom directive is using isolated scope concept of angularJs.So, we can use it as many times we want in a page.
+This custom directive is using isolated scope concept of AngularJs.So, we can use it as many times we want in a page without hamparing scope.
 
