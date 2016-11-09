@@ -23,7 +23,7 @@ To use this directive maintain the following structure and include in your web a
 - filter-list-method : It is used for filtering or search capability on the dropdown list of items
 - input-placeholder : It is used to show the default placeholder
 - input-name : It is used for naming the input tag
-- selected-item : Used to store the final selected item (Optional Attribute)
+- selected-item : Used to store the final selected item 
 
 This custom directive is using isolated scope concept of AngularJs.So, we can use it as many times we want in a page without hamparing scope.
 
